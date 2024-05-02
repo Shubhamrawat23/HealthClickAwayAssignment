@@ -1,6 +1,9 @@
 *{
     margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
+
 
 #heading{
     display: flex;
@@ -29,7 +32,6 @@
 ul li{
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
 }
 ul li:hover{
     color: green;
@@ -40,11 +42,12 @@ ul li:hover{
     height: 10px;
 }
 
+main{min-height: 0;
+}
 
 
 #dietitianSlotBookingSection{
     display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -572,463 +575,301 @@ footer{
 /*----------------------------------Media Query---------------------------------------*/
 /*------------------------------------------------------------------------------------*/
 
+@media screen and (max-width: 431px) {
 
-
-@media only screen and (max-width:426px) {
-    main{
-        height: 300rem;
-    }
-    #heading{
-        width: 425px;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
     #logo{
-        width: 150px;
+        width: 430px;
+        left: 0;
+        text-align: center;
+        height: 50%;
+        top: 25px;
+    }
+
+    #navBar{
+        width: 413px;
+        gap: 30px;
+        left: 0px;
+        top: 30px;
+        padding: 0;
+        white-space: nowrap;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    main{
+        width: 430px;
+        height: 4600px;
+    }
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        width: 430px;
+        height: 2950px;
+        position: relative;
+        top: 50px;
+    }
+
+
+
+
+    #dietitianMainBox{
+        width: 420px;
+        height: 730px;
+        top: 5px;
+        left: 10px;
+    }
+
+    #aboutAndPriceOfDietitian{
+        height: 350px;
+        width: 400px;
+    }
+
+    #aboutDietitian{
+        height: 17rem;
+        width: 410px;
+        gap: 20px;
+    }
+    #di
+
+    #priceAndMsgCoachBtn{
+        width: 420px;
+        top: 4px;
+        left: 18px;
+    }
+
+    #morePricing{
+        position: relative;
+        bottom: 10px;
+    }
+    #msgBtn{
+        position: relative;
+        left: 60px;
+        top: 0;
+    }
+
+    #videoMainBox{
+        top: 35px;
+    }
+
+    #navOfVideos{
+        margin-bottom: 10px;
+    }
+
+    #videoGallery{
+        gap: 8px;
+    }
+    #videoGallery div{
+        position: relative;
+        left: 4px;
+    }
+    #videoGallery div video{
+        width: 200px;
+    }
+    #videoGallery div p{
+        width: 170px;
+    }
+
+
+
+
+    #SlotAndTrainingMainBox{
+        width: 420px;
+        height: 2090px;
+        left: 5px;
+        top: 50px;
+    }
+
+    #SlotBookingBox{
+        width: 420px;
+        height: 660px;
+    }
+
+    #aboutTimeZone{
+        width: 300px;
+        left: 10px;
+        top: 20px;
+    }
+
+    #aboutSessions{
         left: 10px;
         top: 25px;
     }
 
-    #navBar{    
-        justify-content:flex-start;
-        width: 420px;
-        height: auto;
-        left: 0px;
-        top: 60px;
-        padding: 0;
-        background-color: white;
-        overflow-y: scroll;
-        gap: 50px;
-    }
-
-    #navBar::-webkit-scrollbar{
-        display: none;
-    }
-
-    #dietitianSlotBookingSection{
-        flex-direction: column;
-        position: relative;
-        top: 70px;
-    }
-
-    #dietitianMainBox{
-        width: 420px;
-        height: 950px;
-        left: 6px;
-    }
-
-    #aboutDietitian{
-        gap: 30px;
-    }
-
-    #morePricing{
-        position: relative;
-        left: 50px;
-    }
-
-    #msgBtn{
-        left: 90px;
-    } 
-
-    #videoGallery div video {
-        width: 190px;
-        height: 200px;
-    }
-
-    #SlotAndTrainingMainBox{
-        width: 415px;
-        height: 2200px;
-        left: 5px;
-    }
-
-    #SlotBookingBox{
-        height: 48rem;
-    }
-
-    #aboutTimeZone{
-        width: 350px;
-    }
-
     #ClanderAndTimmingsBox{
-        flex-direction: column;
-        width: 380px;
-    }
-
-    #calender{
-        width: 90%;
-    }
-
-    #timmingsTable{
-        width: 380px;
-        height: 300px;
-        right: 10px;
-        top: 20px;
-    }
-
-    #trainingBox{
-        height: 88rem;
-    }
-
-    #stepsOfOnlineTraining{
-        padding: 0;
-        height: 68rem;
-    }
-
-    #stepsOfOnlineTraining li{
-        width: 400px
-    }
-
-    #stepsOfOnlineTraining li p{
-        width: 370px;
-        left: 40px;
-    }
-    #stepsOfOnlineTraining li h2{
-        width: 370px;
-    }
-
-    #testimonialsSection{
-        top: 150px;
-    }
-    #reviewBox{
-        top: 100px;
-        left: 25px;
-        width: 22rem;
-    }
-
-    #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
-        width: 3rem;
-        height: 3rem;
-        right: 20px;
-        top: 60px;
-    }
-
-    #leftWhiteArrow,#rightWhiteArrow{
-       top: 8px;
-    }
-
-    #review{
-        width: 18rem;
-        line-height: 17px;
-    }
-
-    #BoxForwhiteRightArrow{
-        left: 335px;
-        top: -148px;
-    }
-
-    #nameOfReviewer{
-        bottom: 75px;
-    }
-
-    #fiveStarRating{
-        left: 145px;
-        bottom: 75px;
-    }
-
-    #reviewerImageBox{
-        width: 5rem;
-        height: 6rem;
-    }
-    
-    #reviewerImage{
-        left: 138px;
-        bottom: 75px;
-    }
-
-    #reverseQuoteIcon{
-        left: 290px;
-    }
-
-    #downloadAppSection{
-        height: 800px;
-        position: relative;
-        top: 150px;
-    }
-
-    #downloadAppSection h1{
-        top: 50px;
-        left: 40px;
-    }
-
-    #aboutApp{
-        top: 80px;
-        width: 23rem;
-        left: 40px;
-    }
-
-    #appLinkForDifferentOS{
-        top: 110px;
         left: 10px;
-        width: 25rem;
+        top: 40px;
+        width: 410px;
     }
-
-    #androidBox div, #iosBox div{
-        width: 100px;
-    }
-    #androidBox h2{
-        width: 125px;
-    }
-    #iosBox h2{
-       width: 120px;
-    }
-
-    #phoneImage{
-        width: 350px;
-        height: 380px;
-        top: 150px;
-        left: 40px;
-        bottom: 0px;
-    }
-
-    footer{
-        top: 5px;
-    }
-}
-
-
-
-
-
-
-@media only screen and (max-width:376px) {
-    main{
-        height: 344rem;
-    }
-    #heading{
-        width: 375px;
-    }
-
-    #navBar{    
-        justify-content:flex-start;
-        width: 374px;
-        height: auto;
-        left: 0px;
-        top: 60px;
-        padding: 0;
-        background-color: white;
-        overflow-y: scroll;
-        gap: 10px;
-    }
-
-    #navBar::-webkit-scrollbar{
-        display: none;
-    }
-
-    #dietitianSlotBookingSection{
-        flex-direction: column;
-        position: relative;
-        top: 70px;
-        width: 330px;
-    }
-
-    #dietitianMainBox{
-        width: 374px;
-        height: 950px;
-        left: 6px;
-    }
-
-    #aboutDietitian{
-        gap: 30px;
-    }
-
-    #expertiseOfDietitian{
-        width: 13rem;
-    }
-
-    #morePricing{
-        position: relative;
-        left: 30px;
-    }
-
-    #msgBtn{
-        left: 60px;
-    } 
     
-
-    #navOfVideos{
-        gap: 55px;
-    }
-
-
-    #videoGallery{
-        gap: 20px;
-    }
-
-    #videoGallery div video {
-        width: 320px;
-        height: 200px;
-    }
-
-    #SlotAndTrainingMainBox{
-        width: 320px;
-        height: 3000px;
-        left: 5px;
-        top: 580px;
-    }
-
-    #SlotBookingBox{
-        height: 48rem;
-    }
-
-    #aboutTimeZone{
-        width: 300px;
-    }
-
-    #aboutSessions{
-        width: 290px;
-    }
-
-    #ClanderAndTimmingsBox{
-        flex-direction: column;
-        width: 300px;
-    }
-    #leftArrow,#rightArrow{
-        left: 150px;
-    }
-
-    #calender{
-        width: 80%;
-    }
     #calenderTable{
-        width: 290px;
-    }
-
-    #timmings{
-        width: 300px;
+        width: 400px;
     }
     #timmingsTable{
-        width: 300px;
-        height: 300px;
-        right: 15px;
-        top: 20px;
+        top: 10px;
+        right: 0px;
+        width: 400px;
     }
 
     #trainingBox{
-        height: 110rem;
+        height: 1350px;
+        top: 50px;
+    }
+
+    #trainingText{
+        top: 15px;
+    }
+    #trainingIntroQues{
+        top: 40px;
+        padding: 0 15px;
     }
 
     #stepsOfOnlineTraining{
-        padding: 0;
+        padding: 0px;
+        top: 80px;
+        height: 1100px;
     }
 
-    #stepsOfOnlineTraining li{
-        width: 300px
-    }
-
-    #stepsOfOnlineTraining li p{
-        width: 280px;
-        left: 40px;
-    }
     #stepsOfOnlineTraining li h2{
-        width: 280px;
+        width: 370px;
+        left: 35px;
     }
-
-    #testimonialsSection{
-        left: 2px;
-        top: 230px;
-        width: 330px;
-    }
-
-    #reviewBox{
-        top: 100px;
-        left: 25px;
-        width: 18rem;
-    }
-
-    #quoteIcon{
-        width: 40px;
-        height: 40px;
-        left: 5px;
-    }
-
-    #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
-        width: 2rem;
-        height: 2rem;
-        right: 15px;
-        top: 80px;
-    }
-
-    #leftWhiteArrow,#rightWhiteArrow{
-       top: 4px;
-       width: 25px;
-       height: 25px;
-    }
-
-    #review{
-        bottom: 35px;
-        width: 13rem;
-        line-height: 15px;
-    }
-
-    #BoxForwhiteRightArrow{
-        left: 265px;
-        top: -135px;
-    }
-
-    #nameOfReviewer{
-        bottom: 60px;
-    }
-
-    #fiveStarRating{
-        left: 125px;
-        bottom: 60px;
-    }
-    
-    #reviewerImage{
-        left: 115px;
-        bottom: 60px;
-    }
-
-    #reverseQuoteIcon{
-        left: 240px;
-        width: 40px;
-        height: 40px;
-    }
-
-    #downloadAppSection{
-        height: 50rem;
-        width: 330px;
-        top: 200px;
-    }
-    #downloadAppSection h1{
-        width: 20rem;
-    }
-
-    #aboutApp{
-        top: 80px;
-        width: 17rem;
+    #stepsOfOnlineTraining li p{
+        width: 365px;
         left: 35px;
     }
 
+
+
+
+
+    #testimonialsSection{
+        width: 420px;
+        height: 500px;
+        top: 0px;
+        left: 8px;
+    }
+    #reviewBox{
+        width: 410px;
+        top: 70px;
+        left: 5px;
+    }
+
+    #quoteIcon{
+       width: 50px;
+       height: 50px;
+       left: 5px; 
+    }
+
+    #BoxForwhiteLeftArrow{
+        width: 2rem;
+        height: 2.5rem;
+        top: 70px;
+        left: 0px;
+    }
+
+    #leftWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #review{
+        width: 330px;
+        bottom:40px;
+        left: 60px;
+        line-height: 22px;
+    }
+
+    #BoxForwhiteRightArrow{
+        width: 1.5rem;
+        height: 2.5rem;
+        left: 390px;
+        top: -140px;
+    }
+    #rightWhiteArrow{
+        top: 6px;
+        left: -5px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #nameOfReviewer{
+        bottom: 60px;
+    }
+    #fiveStarRating{
+        bottom: 60px;
+        left: 170px;
+    }
+    #reviewerImage{
+        bottom: 60px;
+        left: 165px;
+    }
+
+    
+    #reverseQuoteIcon{
+        width: 50px;
+        height: 50px;
+        left: 340px;
+        bottom: 200px;
+    }
+
+
+
+
+
+    #downloadAppSection{
+        position: relative;
+        top: 50px;
+        width: 420px;
+        height: 765px;
+    }
+    #downloadAppSection h1{
+        top: 20px;
+        width: 24rem;
+        left: 20px;
+    }
+    #aboutApp{
+        top: 50px;
+        left: 20px;
+        width: 380px;
+    }
     #appLinkForDifferentOS{
-        top: 110px;
-        left: 10px;
-        width: 19rem;
+        top: 80px;
+        left: 15px;
+        width: 390px;
     }
-
+    #playstoreIcon, #appleIcon{
+        left: 2px;
+        width: 40px;
+        height: 40px;
+        top: 12px;
+    }
     #androidBox div, #iosBox div{
-        width: 80px;
-        left: 55px;
+        bottom: 30px;
+        width: 100px;
+        left: 50px;
     }
-    #androidBox h2{
-        width: 80px;
-        font-size: medium;
+    #androidBox h2, #iosBox h2{
+        position: relative;
+        width: 130px;
+        bottom: 30px;
+        left: 45px;
     }
-    #iosBox h2{
-       width: 100px;
-       font-size: medium;
-    }
-
     #phoneImage{
-        width: 280px;
-        height: 300px;
-        top: 150px;
-        left: 10px;
-        bottom: 0px;
+        width: 320px;
+        height: 350px;
+        top: 100px;
+        left: 60px;
     }
-
     footer{
-        top: 10px;
+        position: relative;
+        top: -350px;
+        left: 5px;
+        width: 420px;
+        height: 5rem;
     }
 }
 
@@ -1036,231 +877,1490 @@ footer{
 
 
 
-@media only screen and (max-width:321px) {
-    #heading{
-        width: 318px;
+
+@media screen and (max-width: 415px) {
+
+    #logo{
+        width: 414px;
+        left: 0;
+        text-align: center;
+        height: 50%;
+        top: 25px;
     }
 
-    #navBar{    
-        justify-content:flex-start;
-        width: 280px;
+    #navBar{
+        width: 413px;
+        gap: 30px;
+        left: 0px;
+        top: 30px;
         padding: 0;
-        background-color: white;
+        white-space: nowrap;
+        justify-content: flex-start;
         overflow-y: scroll;
     }
-
     #navBar::-webkit-scrollbar{
         display: none;
     }
 
+
+    main{
+        width: 414px;
+        height: 4600px;
+    }
     #dietitianSlotBookingSection{
         flex-direction: column;
+        width: 414px;
+        height: 2950px;
         position: relative;
-        top: 70px;
+        top: 50px;
     }
 
+
+
+
     #dietitianMainBox{
-        width: 280px;
-        height: 950px;
-        left: 6px;
+        width: 400px;
+        height: 730px;
+        top: 5px;
+        left: 10px;
+    }
+
+    #aboutAndPriceOfDietitian{
+        height: 338px;
+        width: 390px;
     }
 
     #aboutDietitian{
-        gap: 10px;
+        height: 17rem;
+        width: 390px;
+        gap: 20px;
     }
+    #di
 
-    #expertiseOfDietitian{
-        width: 13rem;
+    #priceAndMsgCoachBtn{
+        width: 414px;
+        top: 4px;
+        left: 18px;
     }
 
     #morePricing{
         position: relative;
-        left: 10px;
+        bottom: 10px;
+    }
+    #msgBtn{
+        position: relative;
+        left: 60px;
+        top: 0;
     }
 
-    #msgBtn{
-        left: 30px;
-    } 
-    
+    #videoMainBox{
+        top: 35px;
+    }
 
     #navOfVideos{
-        gap: 55px;
+        margin-bottom: 10px;
     }
-
 
     #videoGallery{
-        gap: 20px;
+        gap: 10px;
+    }
+    #videoGallery div{
+        position: relative;
+        left: 4px;
+    }
+    #videoGallery div video{
+        width: 190px;
+    }
+    #videoGallery div p{
+        width: 170px;
     }
 
-    #videoGallery div video {
-        width: 295px;
-        height: 200px;
-    }
+
+
 
     #SlotAndTrainingMainBox{
-        width: 300px;
-        height: 3300px;
+        width: 400px;
+        height: 2090px;
         left: 5px;
-        top: 580px;
+        top: 40px;
     }
 
     #SlotBookingBox{
-        height: 48rem;
-        width: 300px;
+        width: 400px;
+        height: 660px;
     }
 
     #aboutTimeZone{
-        width: 280px;
-    }
-
-    #aboutSessions{
-        width: 250px;
-    }
-
-    #ClanderAndTimmingsBox{
-        flex-direction: column;
         width: 300px;
-    }
-
-    #leftArrow{
-        left: 120px;
-    }
-    #rightArrow{
-        left: 120px;
-    }
-    #calender{
-        width: 90%;
-    }
-    #calenderTable{
-        width: 270px;
-    }
-
-    #timmings{
-        width: 300px;
-    }
-    #timmingsTable{
-        width: 280px;
-        height: 300px;
-        right: 10px;
+        left: 10px;
         top: 20px;
     }
 
+    #aboutSessions{
+        left: 10px;
+        top: 25px;
+    }
+
+    #ClanderAndTimmingsBox{
+        left: 10px;
+        top: 40px;
+        width: 400px;
+    }
+    
+    #calenderTable{
+        width: 380px;
+    }
+    #timmingsTable{
+        top: 10px;
+        right: 0px;
+        width: 380px;
+    }
+
     #trainingBox{
-        height: 118rem;
-        width: 300px;
+        height: 1350px;
+        top: 50px;
+    }
+
+    #trainingText{
+        top: 15px;
+    }
+    #trainingIntroQues{
+        top: 40px;
+        padding: 0 15px;
     }
 
     #stepsOfOnlineTraining{
-        padding: 0;
-        width: 300px;
+        padding: 0px;
+        top: 80px;
+        height: 1100px;
     }
 
-    #stepsOfOnlineTraining li{
-        width: 300px
-    }
-
-    #stepsOfOnlineTraining li p{
-        width: 270px;
-        left: 40px;
-    }
     #stepsOfOnlineTraining li h2{
-        width: 250px;
+        width: 370px;
+        left: 35px;
     }
+    #stepsOfOnlineTraining li p{
+        width: 365px;
+        left: 35px;
+    }
+
+
+
+
 
     #testimonialsSection{
-        left: 2px;
-        top: 100px;
+        width: 400px;
+        height: 500px;
+        top: 0px;
+        left: 8px;
     }
-
     #reviewBox{
-        top: 100px;
-        left: 20px;
-        width: 17rem;
+        width: 390px;
+        top: 70px;
+        left: 5px;
     }
 
-    #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
-        width: 1rem;
-        height: 1rem;
-        right: 10px;
-        top: 80px;
+    #quoteIcon{
+       width: 50px;
+       height: 50px;
+       left: 5px; 
     }
 
-    #leftWhiteArrow,#rightWhiteArrow{
-       top: 0px;
-       width: 10px;
-       height: 10px;
+    #BoxForwhiteLeftArrow{
+        width: 2rem;
+        height: 2.5rem;
+        top: 70px;
+        left: 0px;
+    }
+
+    #leftWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
     }
 
     #review{
-        bottom: 30px;
-        width: 12rem;
-        line-height: 15px;
+        width: 300px;
+        bottom:40px;
+        left: 60px;
+        line-height: 20px;
     }
 
     #BoxForwhiteRightArrow{
-        left: 265px;
+        width: 2rem;
+        height: 2.5rem;
+        left: 360px;
         top: -130px;
+    }
+    #rightWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
     }
 
     #nameOfReviewer{
-        bottom: 40px;
+        bottom: 60px;
     }
-
     #fiveStarRating{
-        left: 105px;
-        bottom: 40px;
+        bottom: 60px;
+        left: 160px;
+    }
+    #reviewerImage{
+        bottom: 60px;
+        left: 150px;
     }
     
-    #reviewerImage{
-        left: 98px;
-        bottom: 40px;
-    }
-
     #reverseQuoteIcon{
-        left: 210px;
-        top: -190px;
+        width: 50px;
+        height: 50px;
+        left: 340px;
+        bottom: 200px;
     }
 
+
+
+
+
+    #downloadAppSection{
+        position: relative;
+        top: 50px;
+        width: 400px;
+        height: 765px;
+    }
     #downloadAppSection h1{
-        width: 16rem;
-        left: 25px;
-    }
-
-    #aboutApp{
-        top: 80px;
-        width: 15rem;
-        left: 25px;
-    }
-
-    #appLinkForDifferentOS{
-        top: 110px;
-        left: 5px;
-        width: 18rem;
-    }
-
-    #androidBox div, #iosBox div{
-        width: 70px;
-        left: 55px;
-        font-size: x-small;
-    }
-    #androidBox h2{
-        width: 90px;
-        font-size: small;
-    }
-    #iosBox h2{
-       width: 80px;
-       font-size: medium;
-    }
-
-    #phoneImage{
-        width: 250px;
-        height: 320px;
-        top: 150px;
+        top: 20px;
+        width: 24rem;
         left: 20px;
-        bottom: 0px;
+    }
+    #aboutApp{
+        top: 50px;
+        left: 20px;
+        width: 360px;
+    }
+    #appLinkForDifferentOS{
+        top: 80px;
+        left: 15px;
+        width: 390px;
+    }
+    #playstoreIcon, #appleIcon{
+        left: 2px;
+        width: 40px;
+        height: 40px;
+        top: 12px;
+    }
+    #androidBox div, #iosBox div{
+        bottom: 30px;
+        width: 100px;
+        left: 50px;
+    }
+    #androidBox h2, #iosBox h2{
+        position: relative;
+        width: 130px;
+        bottom: 30px;
+        left: 45px;
+    }
+    #phoneImage{
+        width: 320px;
+        height: 350px;
+        top: 100px;
+        left: 50px;
+    }
+    footer{
+        position: relative;
+        top: -350px;
+        left: 5px;
+        width: 405px;
+        height: 5rem;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 391px) {
+
+    #logo{
+        width: 390px;
+        left: 0;
+        text-align: center;
+        height: 50%;
+        top: 25px;
     }
 
+    #navBar{
+        width: 390px;
+        gap: 30px;
+        left: 0px;
+        top: 30px;
+        padding: 0;
+        white-space: nowrap;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    main{
+        width: 390px;
+        height: 5650px;
+        position: relative;
+        top: 50px;
+    }
+    #dietitianSlotBookingSection{
+        display: block;
+        width: 390px;
+        height: 2820px;
+    }
+
+
+
+
+    #dietitianMainBox{
+        width: 389px;
+        height: 730px;
+        left: 0px;
+    }
+
+    #aboutAndPriceOfDietitian{
+        height: 338px;
+    }
+
+    #aboutDietitian{
+        height: 17rem;
+    }
+
+    #priceAndMsgCoachBtn{
+        width: 350px;
+        top: 4px;
+        left: 18px;
+    }
+
+    #morePricing{
+        position: relative;
+        bottom: 10px;
+    }
+    #msgBtn{
+        position: relative;
+        left: 70px;
+        top: 0;
+    }
+
+    #videoMainBox{
+        top: 5px;
+    }
+
+    #navOfVideos{
+        margin-bottom: 10px;
+    }
+
+    #videoGallery{
+        gap: 10px;
+    }
+    #videoGallery div{
+        position: relative;
+        left: 10px;
+    }
+    #videoGallery div video{
+        width: 175px;
+    }
+    #videoGallery div p{
+        width: 170px;
+    }
+
+
+
+
+    #SlotAndTrainingMainBox{
+        width: 389px;
+        height: 2090px;
+        left: 0px;
+        top: 20px;
+    }
+
+    #SlotBookingBox{
+        width: 388px;
+        height: 640px;
+    }
+
+    #aboutTimeZone{
+        width: 300px;
+        left: 10px;
+        top: 10px;
+    }
+
+    #aboutSessions{
+        left: 10px;
+        top: 15px;
+    }
+
+    #ClanderAndTimmingsBox{
+        width: 350px;
+        left: 10px;
+        top: 20px;
+    }
+
+    #calenderTable{
+        width: 360px;
+    }
+
+    #timmingsTable{
+        top: 2px;
+        right: 0px;
+        width: 360px;
+    }
+
+    #trainingBox{
+        height: 1450px;
+        top: 45px;
+    }
+
+    #trainingText{
+        top: 15px;
+    }
+    #trainingIntroQues{
+        top: 20px;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0px;
+        top: 35px;
+        height: 1180px;
+    }
+
+    #stepsOfOnlineTraining li h2{
+        width: 340px;
+        left: 35px;
+    }
+    #stepsOfOnlineTraining li p{
+        width: 340px;
+        left: 35px;
+    }
+
+
+
+
+
+    #testimonialsSection{
+        display: block;
+        width: 389px;
+        height: 450px;
+        top: 150px;
+        z-index: 100;
+        left: 2px;
+    }
+    #reviewBox{
+        width: 375px;
+        top: 50px;
+        left: 5px;
+    }
+
+    #quoteIcon{
+       width: 40px;
+       height: 40px;
+       left: 5px; 
+    }
+
+    #BoxForwhiteLeftArrow{
+        width: 2rem;
+        height: 2.5rem;
+        top: 70px;
+        left: 0px;
+    }
+
+    #leftWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #review{
+        width: 270px;
+        bottom:40px;
+        left: 55px;
+        line-height: 18px;
+    }
+
+    #BoxForwhiteRightArrow{
+        width: 2rem;
+        height: 2.5rem;
+        left: 342px;
+        top: -130px;
+    }
+    #rightWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #nameOfReviewer{
+        bottom: 50px;
+    }
+    #fiveStarRating{
+        bottom: 50px;
+        left: 155px;
+    }
+    #reviewerImage{
+        bottom: 50px;
+        left: 150px;
+    }
+    
+    #reverseQuoteIcon{
+        width: 40px;
+        height: 40px;
+        left: 330px;
+        bottom: 220px;
+    }
+
+
+
+
+
+    #downloadAppSection{
+        position: relative;
+        top: 160px;
+        width: 389px;
+        height: 670px;
+    }
+    #downloadAppSection h1{
+        width: 350px;
+        top: 20px;
+        left: 20px;
+    }
+    #aboutApp{
+        top: 50px;
+        left: 20px;
+        width: 350px;
+    }
+    #appLinkForDifferentOS{
+        top: 80px;
+        left: 5px;
+        width: 355px;
+    }
+    #playstoreIcon, #appleIcon{
+        left: 2px;
+        width: 35px;
+        height: 35px;
+        top: 12px;
+    }
+    #androidBox div, #iosBox div{
+        bottom: 30px;
+        left: 40px;
+    }
+    #androidBox h2, #iosBox h2{
+        position: relative;
+        width: 130px;
+        bottom: 30px;
+        left: 35px;
+    }
+    #phoneImage{
+        width: 280px;
+        height: 200px;
+        top: 100px;
+        left: 60px;
+    }
     footer{
-        top: 320px;
+        width: 382px;
+        height: 5rem;
+        top: -1550px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 376px) {
+
+    #logo{
+        width: 355px;
+        left: 0;
+        text-align: center;
+        height: 50%;
+        top: 25px;
+    }
+
+    #navBar{
+        width: 355px;
+        gap: 30px;
+        left: 0px;
+        top: 30px;
+        padding: 0;
+        white-space: nowrap;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    main{
+        width: 355px;
+        height: 4500px;
+    }
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 355px;
+        height: 3100px;
+        position: relative;
+        top: 40px;
+    }
+
+
+
+
+    #dietitianMainBox{
+        width: 355px;
+        height: 730px;
+        top: 0;
+        left: 0px;
+    }
+
+    #aboutAndPriceOfDietitian{
+        height: 338px;
+        width: 375px;
+    }
+
+    #aboutDietitian{
+        height: 17rem;
+        width: 375px;
+    }
+
+    #priceAndMsgCoachBtn{
+        width: 350px;
+        top: 4px;
+        left: 18px;
+    }
+
+    #morePricing{
+        position: relative;
+        bottom: 10px;
+    }
+    #msgBtn{
+        position: relative;
+        left: 60px;
+        top: 0;
+    }
+
+    #videoMainBox{
+        top: 5px;
+    }
+
+    #navOfVideos{
+        margin-bottom: 10px;
+    }
+
+    #videoGallery{
+        gap: 10px;
+    }
+    #videoGallery div{
+        position: relative;
+        left: 4px;
+    }
+    #videoGallery div video{
+        width: 170px;
+    }
+    #videoGallery div p{
+        width: 170px;
+    }
+
+
+
+
+    #SlotAndTrainingMainBox{
+        width: 355px;
+        height: 2090px;
+        left: 0px;
+        top: 20px;
+    }
+
+    #SlotBookingBox{
+        width: 355px;
+        height: 660px;
+    }
+
+    #aboutTimeZone{
+        width: 300px;
+        left: 10px;
+        top: 20px;
+    }
+
+    #aboutSessions{
+        left: 10px;
+        top: 25px;
+    }
+
+    #ClanderAndTimmingsBox{
+        left: 10px;
+        top: 30px;
+        width: 350px;
+    }
+    
+    #calenderTable{
+        width: 340px;
+    }
+    #timmingsTable{
+        top: 10px;
+        right: 0px;
+        width: 340px;
+    }
+
+    #trainingBox{
+        height: 1650px;
+        top: 20px;
+    }
+
+    #trainingText{
+        top: 15px;
+    }
+    #trainingIntroQues{
+        top: 40px;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0px;
+        top: 80px;
+        height: 1300px;
+    }
+
+    #stepsOfOnlineTraining li h2{
+        width: 315px;
+        left: 35px;
+    }
+    #stepsOfOnlineTraining li p{
+        width: 310px;
+        left: 35px;
+    }
+
+
+
+
+
+    #testimonialsSection{
+        width: 360px;
+        height: 500px;
+        top: 80px;
+        z-index: 100;
+        left: 2px;
+    }
+    #reviewBox{
+        width: 345px;
+        top: 70px;
+        left: 5px;
+    }
+
+    #quoteIcon{
+       width: 40px;
+       height: 40px;
+       left: 5px; 
+    }
+
+    #BoxForwhiteLeftArrow{
+        width: 2rem;
+        height: 2.5rem;
+        top: 70px;
+        left: 0px;
+    }
+
+    #leftWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #review{
+        width: 250px;
+        bottom:40px;
+        left: 55px;
+        line-height: 18px;
+    }
+
+    #BoxForwhiteRightArrow{
+        width: 2rem;
+        height: 2.5rem;
+        left: 312px;
+        top: -150px;
+    }
+    #rightWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #nameOfReviewer{
+        bottom: 60px;
+    }
+    #fiveStarRating{
+        bottom: 60px;
+        left: 145px;
+    }
+    #reviewerImage{
+        bottom: 60px;
+        left: 138px;
+    }
+    
+    #reverseQuoteIcon{
+        width: 40px;
+        height: 40px;
+        left: 300px;
+        bottom: 230px;
+    }
+
+
+
+
+
+    #downloadAppSection{
+        position: relative;
+        top: 100px;
+        width: 355px;
+        height: 765px;
+    }
+    #downloadAppSection h1{
+        top: 20px;
+        width: 20rem;
+        left: 20px;
+    }
+    #aboutApp{
+        top: 50px;
+        left: 20px;
+        width: 333px;
+    }
+    #appLinkForDifferentOS{
+        top: 80px;
+        left: 5px;
+        width: 345px;
+    }
+    #playstoreIcon, #appleIcon{
+        left: 2px;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+    }
+    #androidBox div, #iosBox div{
+        bottom: 20px;
+        width: 100px;
+        left: 40px;
+    }
+    #androidBox h2, #iosBox h2{
+        position: relative;
+        width: 130px;
+        bottom: 20px;
+        left: 30px;
+    }
+    #phoneImage{
+        width: 280px;
+        height: 200px;
+        top: 100px;
+        left: 40px;
+    }
+    footer{
+        position: relative;
+        top: -100px;
+        left: 5px;
+        width: 365px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 361px) {
+
+    #logo{
+        width: 355px;
+        left: 0;
+        text-align: center;
+        height: 50%;
+        top: 25px;
+    }
+
+    #navBar{
+        width: 355px;
+        gap: 30px;
+        left: 0px;
+        top: 30px;
+        padding: 0;
+        white-space: nowrap;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    main{
+        width: 355px;
+        height: 4400px;
+    }
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 355px;
+        height: 3100px;
+        position: relative;
+        top: 40px;
+    }
+
+
+
+
+    #dietitianMainBox{
+        width: 355px;
+        height: 730px;
+        top: 0;
+        left: 0px;
+    }
+
+    #aboutAndPriceOfDietitian{
+        height: 338px;
+        width: 355px;
+    }
+
+    #aboutDietitian{
+        height: 17rem;
+        width: 355px;
+    }
+
+    #priceAndMsgCoachBtn{
+        width: 350px;
+        top: 4px;
+        left: 18px;
+    }
+
+    #morePricing{
+        position: relative;
+        bottom: 10px;
+    }
+    #msgBtn{
+        position: relative;
+        left: 60px;
+        top: 0;
+    }
+
+    #videoMainBox{
+        top: 5px;
+    }
+
+    #navOfVideos{
+        margin-bottom: 10px;
+    }
+
+    #videoGallery{
+        gap: 10px;
+    }
+    #videoGallery div{
+        position: relative;
+        left: 4px;
+    }
+    #videoGallery div video{
+        width: 170px;
+    }
+    #videoGallery div p{
+        width: 170px;
+    }
+
+
+
+
+    #SlotAndTrainingMainBox{
+        width: 355px;
+        height: 2090px;
+        left: 0px;
+        top: 20px;
+    }
+
+    #SlotBookingBox{
+        width: 355px;
+        height: 660px;
+    }
+
+    #aboutTimeZone{
+        width: 300px;
+        left: 10px;
+        top: 20px;
+    }
+
+    #aboutSessions{
+        left: 10px;
+        top: 25px;
+    }
+
+    #ClanderAndTimmingsBox{
+        left: 10px;
+        top: 30px;
+        width: 350px;
+    }
+    
+    #calenderTable{
+        width: 340px;
+    }
+    #timmingsTable{
+        top: 10px;
+        right: 0px;
+        width: 340px;
+    }
+
+    #trainingBox{
+        height: 1650px;
+        top: 20px;
+    }
+
+    #trainingText{
+        top: 15px;
+    }
+    #trainingIntroQues{
+        top: 40px;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0px;
+        top: 80px;
+        height: 1300px;
+    }
+
+    #stepsOfOnlineTraining li h2{
+        width: 315px;
+        left: 35px;
+    }
+    #stepsOfOnlineTraining li p{
+        width: 310px;
+        left: 35px;
+    }
+
+
+
+
+
+    #testimonialsSection{
+        width: 360px;
+        height: 500px;
+        top: 80px;
+        z-index: 100;
+        left: 2px;
+    }
+    #reviewBox{
+        width: 345px;
+        top: 70px;
+        left: 5px;
+    }
+
+    #quoteIcon{
+       width: 40px;
+       height: 40px;
+       left: 5px; 
+    }
+
+    #BoxForwhiteLeftArrow{
+        width: 2rem;
+        height: 2.5rem;
+        top: 70px;
+        left: 0px;
+    }
+
+    #leftWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #review{
+        width: 250px;
+        bottom:40px;
+        left: 55px;
+        line-height: 18px;
+    }
+
+    #BoxForwhiteRightArrow{
+        width: 2rem;
+        height: 2.5rem;
+        left: 312px;
+        top: -150px;
+    }
+    #rightWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #nameOfReviewer{
+        bottom: 60px;
+    }
+    #fiveStarRating{
+        bottom: 60px;
+        left: 145px;
+    }
+    #reviewerImage{
+        bottom: 60px;
+        left: 138px;
+    }
+    
+    #reverseQuoteIcon{
+        width: 40px;
+        height: 40px;
+        left: 300px;
+        bottom: 230px;
+    }
+
+
+
+
+
+    #downloadAppSection{
+        position: relative;
+        top: 100px;
+        width: 355px;
+        height: 765px;
+    }
+    #downloadAppSection h1{
+        top: 20px;
+        width: 20rem;
+        left: 20px;
+    }
+    #aboutApp{
+        top: 50px;
+        left: 20px;
+        width: 333px;
+    }
+    #appLinkForDifferentOS{
+        top: 80px;
+        left: 5px;
+        width: 345px;
+    }
+    #playstoreIcon, #appleIcon{
+        left: 2px;
+        width: 30px;
+        height: 30px;
+        top: 12px;
+    }
+    #androidBox div, #iosBox div{
+        bottom: 20px;
+        width: 100px;
+        left: 40px;
+    }
+    #androidBox h2, #iosBox h2{
+        position: relative;
+        width: 130px;
+        bottom: 20px;
+        left: 30px;
+    }
+    #phoneImage{
+        width: 280px;
+        height: 200px;
+        top: 100px;
+        left: 40px;
+    }
+    footer{
+        position: relative;
+        top: -30px;
+        left: 5px;
+        width: 352px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 345px) {
+
+    #logo{
+        width: 345px;
+        left: 0;
+        text-align: center;
+        height: 50%;
+        top: 25px;
+    }
+
+    #navBar{
+        width: 345px;
+        gap: 30px;
+        left: 0px;
+        top: 30px;
+        padding: 0;
+        white-space: nowrap;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+
+    main{
+        width: 345px;
+        height: 5150px;
+    }
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        width: 345px;
+        height: 3200px;
+        position: relative;
+        top: 40px;
+    }
+
+
+
+
+    #dietitianMainBox{
+        width: 345px;
+        height: 730px;
+        top: 0;
+        left: 0px;
+    }
+
+    #aboutAndPriceOfDietitian{
+        height: 338px;
+        width: 345px;
+    }
+
+    #aboutDietitian{
+        height: 17rem;
+        width: 345px;
+    }
+
+    #priceAndMsgCoachBtn{
+        width: 330px;
+        top: 4px;
+        left: 18px;
+    }
+
+    #morePricing{
+        position: relative;
+        bottom: 10px;
+    }
+    #msgBtn{
+        position: relative;
+        left: 50px;
+        top: 0;
+    }
+
+    #videoMainBox{
+        top: 5px;
+    }
+
+    #navOfVideos{
+        width: 345px;
+        gap: 45px;
+        margin-bottom: 10px;
+    }
+
+    #videoGallery{
+        gap: 5px;
+    }
+    #videoGallery div{
+        position: relative;
+        left: 25px;
+    }
+    #videoGallery div video{
+        width: 300px;
+    }
+    #videoGallery div p{
+        width: 170px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    #SlotAndTrainingMainBox{
+        width: 345px;
+        height: 2090px;
+        left: 0px;
+        top: 400px;
+    }
+
+    #SlotBookingBox{
+        width: 345px;
+        height: 660px;
+    }
+
+    #aboutTimeZone{
+        width: 300px;
+        left: 10px;
+        top: 20px;
+    }
+
+    #aboutSessions{
+        left: 10px;
+        top: 25px;
+    }
+
+    #ClanderAndTimmingsBox{
+        left: 10px;
+        top: 30px;
+        width: 335px;
+    }
+    
+    #calenderTable{
+        width: 330px;
+    }
+    #timmingsTable{
+        top: 10px;
+        right: 0px;
+        width: 330px;
+    }
+
+    #trainingBox{
+        height: 1600px;
+        top: 20px;
+    }
+
+    #trainingText{
+        top: 15px;
+    }
+    #trainingIntroQues{
+        top: 40px;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0px;
+        top: 80px;
+        height: 1300px;
+    }
+
+    #stepsOfOnlineTraining li h2{
+        width: 305px;
+        left: 35px;
+    }
+    #stepsOfOnlineTraining li p{
+        width: 310px;
+        left: 35px;
+    }
+
+
+
+
+
+    #testimonialsSection{
+        width: 345px;
+        height: 500px;
+        top: 300px;
+        left: 2px;
+    }
+    #reviewBox{
+        width: 335px;
+        top: 70px;
+        left: 5px;
+    }
+
+    #quoteIcon{
+       width: 40px;
+       height: 40px;
+       left: 5px; 
+    }
+
+    #BoxForwhiteLeftArrow{
+        width: 2rem;
+        height: 2.5rem;
+        top: 70px;
+        left: 0px;
+    }
+
+    #leftWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #review{
+        width: 250px;
+        bottom:40px;
+        left: 55px;
+        line-height: 18px;
+    }
+
+    #BoxForwhiteRightArrow{
+        width: 2rem;
+        height: 2.5rem;
+        left: 305px;
+        top: -150px;
+    }
+    #rightWhiteArrow{
+        top: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
+    #nameOfReviewer{
+        bottom: 60px;
+    }
+    #fiveStarRating{
+        bottom: 60px;
+        left: 135px;
+    }
+    #reviewerImage{
+        bottom: 60px;
+        left: 128px;
+    }
+    
+    #reverseQuoteIcon{
+        width: 40px;
+        height: 40px;
+        left: 280px;
+        bottom: 230px;
+    }
+
+
+
+
+
+    #downloadAppSection{
+        position: relative;
+        top: 300px;
+        width: 345px;
+        height: 765px;
+    }
+    #downloadAppSection h1{
+        top: 20px;
+        width: 20rem;
+        left: 20px;
+    }
+    #aboutApp{
+        top: 50px;
+        left: 20px;
+        width: 303px;
+    }
+    #appLinkForDifferentOS{
+        top: 80px;
+        left: 5px;
+        width: 330px;
+    }
+    #playstoreIcon, #appleIcon{
+        left: 8px;
+        width: 35px;
+        height: 35px;
+        top: 12px;
+    }
+    #androidBox div, #iosBox div{
+        bottom: 20px;
+        width: 100px;
+        left: 45px;
+    }
+    #androidBox h2, #iosBox h2{
+        position: relative;
+        font-size: larger;
+        width: 110px;
+        bottom: 20px;
+        left: 45px;
+    }
+    #phoneImage{
+        width: 280px;
+        height: 300px;
+        top: 100px;
+        left: 40px;
+    }
+    footer{
+        position: relative;
+        top: -300px;
+        left: 5px;
+        width: 340px;
     }
 }
