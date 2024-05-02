@@ -1,0 +1,1226 @@
+*{
+    margin: 0;
+}
+
+#heading{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 5rem;
+    box-shadow: 0px 1px 4px 1px rgb(208, 200, 200);
+}
+
+#logo{
+    position: relative;
+    left: 60px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+
+#navBar{
+    width: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position:  relative;
+    left: 200px;
+}
+ul li{
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+ul li:hover{
+    color: green;
+}
+
+.arrowIcon{
+    width: 10px;
+    height: 10px;
+}
+
+
+
+#dietitianSlotBookingSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/*--------------About Dietitian-----------*/
+#dietitianMainBox{
+    position: relative;
+    left: 25px;
+    top: 30px;
+    width: 28vw;
+}
+
+
+#aboutDietitian{
+    height: 17rem;
+    display: flex;
+    gap: 15px;
+}
+
+#dietitianImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#dietitianName{
+    width: 160px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+#ratingBox{
+    width: 150px;
+}
+
+#stars{
+    width: 80px;
+}
+
+#qualificationOfDietitian{
+    width: 200px;
+    font-weight: 600;
+}
+
+#expertiseOfDietitian{
+    position: relative;
+    top: 15px;
+    width: 15rem;
+    padding: 10px;
+    background-color: rgb(234, 231, 231);
+}
+
+#startingText{
+    position: relative;
+    top: 30px;
+    color: rgb(177, 175, 175);
+    font-size: x-large;
+}
+#sartingPrice{
+    width: 200px;
+    position: relative;
+    top: 35px;
+    font-size: x-large;
+    color: green;
+    font-weight: bold;
+}
+
+#sartingPrice>span{
+    font-size: medium;
+    font-weight: 100;
+    color: rgb(177, 175, 175);
+}
+
+#morePricing{
+    width: 8rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#msgBtn{
+    width: 9rem;
+    height: 3rem;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: 25px;
+    background-color: rgb(250, 126, 37);
+    cursor: pointer;
+}
+
+#msgIcon{
+    width: 30px;
+    height: 30px;
+}
+#msgCoachText{
+    display: inline-block;
+    width: 75px;
+    color: white;
+    font-size: large;
+}
+
+
+#videoMainBox{
+    position: relative;
+    top: 50px;
+}
+
+#navOfVideos{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 65px;
+    margin-bottom: 25px;
+}
+
+#videoGallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#videoGallery div video{
+    border-radius: 10px;
+}
+#videoGallery div p{
+    width: 100px;
+}
+
+
+/*------------------Slot Booking and Training---------------------*/
+
+#SlotAndTrainingMainBox{
+    width: 65vw;
+    position: relative;
+    left: 40px;
+    top: 30px;
+}
+
+#SlotBookingBox{
+    height: 30rem;
+    box-shadow: -1px 0px 4px 1px rgb(208, 200, 200)
+}
+
+#slotText{
+    margin-top: 8px;
+    text-align: center;
+    color: green;
+    font-weight: 600;
+}
+
+#aboutTimeZone{
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+#textTimeZone{
+    font-weight: bold;
+}
+
+#presentTime{
+    margin-left: 10px;
+}
+
+#aboutSessions{
+    border: 1px solid rgb(188, 186, 186);
+    position: relative;
+    top: 50px;
+    left: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#aboutSessions>img{
+    width: 10px;
+    height: 10px;
+}
+
+
+#ClanderAndTimmingsBox{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    top: 60px;
+    left: 20px;
+}
+
+
+#calender{
+    width: 50%;
+}
+
+#monthAndYear{
+    color: rgb(250, 126, 37);
+    font-weight: bold;
+    font-size: larger;
+}
+
+#leftArrow{
+    position: relative;
+    left: 180px;
+    width: 25px;
+    height: 25px;
+}
+#rightArrow{
+    position: relative;
+    left: 190px;
+    transform: rotate(180deg);
+    width: 25px;
+    height: 25px;
+}
+
+#calenderTable{
+    border: 1px solid rgb(188, 186, 186);
+    width: 360px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: -1px 0px 4px 1px rgb(208, 200, 200);
+}
+
+
+#calenderTable tr:nth-child(2) td:first-child {
+    color: rgb(184, 178, 178);
+}
+#calenderTable tr:last-child td:nth-last-child(-n+4) {
+    color: rgb(184, 178, 178); 
+}
+
+
+
+#timmingsTable{
+    border: 1px solid rgb(188, 186, 186);
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    right: 30px;
+    padding: 10px;
+    border-spacing: 10px;
+    box-shadow: -1px 0px 4px 1px rgb(208, 200, 200);
+}
+
+#timmingsTable tr:nth-child(1) td, #timmingsTable tr:nth-child(4) td{
+    font-weight: 600;
+}
+
+#timmingsTable tr:not(:first-child):not(:nth-child(4)) td {
+    border: 1px solid rgb(188, 186, 186);
+    width: 50px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#timmingsTable tr:not(:first-child):not(:nth-child(4)) td:hover{
+    background-color: rgb(250, 126, 37);
+    color: white;
+    cursor: pointer;
+    box-shadow: -1px 0px 4px 1px rgb(208, 200, 200);
+}
+  
+
+/*-----------------------Training Works------------------------------*/
+
+#trainingBox{
+    background-color: rgba(239, 239, 239, 0.532);
+    border-radius: 10px;
+    height: 55rem;
+    position: relative;
+    top: 25px;
+}
+
+#trainingText{
+    color: green;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+#trainingIntroQues{
+    position: relative;
+    top: 60px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+#stepsOfOnlineTraining{
+    position: relative;
+    top: 100px;
+    padding: 0 30px;
+    list-style: none;
+}
+
+#stepsOfOnlineTraining li{
+    margin-bottom: 30px;
+    counter-increment: step-counter;
+}
+#stepsOfOnlineTraining li::before {
+    content: counter(step-counter)".";
+    background-color: rgb(250, 126, 37);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50px;
+}
+
+#stepsOfOnlineTraining li p, h2{
+    position: relative;
+    left: 40px;
+    bottom: 25px;
+}
+#stepsOfOnlineTraining li p{
+    width: 800px;
+}
+
+
+
+
+/*---------------Testimonials----------------*/
+
+#testimonialsSection{
+    width: 99vw;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+    position: relative;
+    top: 150px;
+}
+
+#testimonialText{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#testimonialsSection h1{
+    text-align: center;
+    position: relative;
+    top: 45px;
+}
+
+#reviewBox{
+    background-color: rgba(255, 255, 255, 0.84);
+    position: relative;
+    top: 120px;
+    left: 400px;
+    width: 40rem;
+    height: 20rem;
+}
+
+#quoteIcon{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(180deg);
+}
+
+#BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
+    background-color: rgba(0, 128, 0, 0.993);
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    right: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+#leftWhiteArrow,#rightWhiteArrow{
+    position: relative;
+    top: 15px;
+}
+
+#review{
+    width: 34rem;
+    position: relative;
+    bottom: 45px;
+    left: 50px;
+    word-wrap: break-word;
+    line-height: 25px;
+}
+
+#BoxForwhiteRightArrow{
+    left: 610px;
+    top: -130px;
+
+}
+#rightWhiteArrow{
+    transform: rotate(180deg);
+}
+
+#nameOfReviewer{
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    font-weight: bold;
+}
+
+#fiveStarRating{
+    width: 4rem;
+    height: 1rem;
+    position: relative;
+    bottom: 100px;
+    left: 285px;
+}
+
+#reviewerImage{
+    width: 5rem;
+    height: 6rem;
+    position: relative;
+    bottom: 100px;
+    left: 280px;
+}
+
+#reverseQuoteIcon{
+    position: relative;
+    bottom: 210px;
+    left: 570px;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+/*-----------------Download App Section--------------*/
+
+#downloadAppSection h1{
+    position: relative;
+    top: 280px;
+    left: 60px;
+    width: 22rem;
+    word-spacing: 5px;
+    line-height: 45px;
+    font-size: xx-large;
+}
+
+#aboutApp{
+    position: relative;
+    top: 300px;
+    left: 60px;
+    width: 32rem;
+}
+
+#appLinkForDifferentOS{
+    width: 26rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 350px;
+    left: 60px;
+}
+
+#androidBox, #iosBox{
+    background-color: black;
+    width: 45%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#playstoreIcon, #appleIcon{
+    width: 40px;
+    height: 45px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+#androidBox div, #iosBox div{
+    font-size: small;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+}
+#androidBox h2, #iosBox h2{
+    position: relative;
+    bottom: 40px;
+    left: 55px;
+}
+
+#phoneImage{
+    width: 400px;
+    height: 420px;
+    position:relative;
+    left: 800px;
+    bottom: 50px;
+}
+
+
+/*--------------------------Footer------------------------------*/
+
+footer{
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    position: relative;
+    top: 20px;
+}
+
+
+
+
+
+
+
+/*----------------------------------Media Query---------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width:426px) {
+    #heading{
+        width: 425px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #logo{
+        width: 150px;
+        left: 10px;
+        top: 25px;
+    }
+
+    #navBar{    
+        justify-content:flex-start;
+        width: 420px;
+        height: auto;
+        left: 0px;
+        top: 60px;
+        padding: 0;
+        background-color: white;
+        overflow-y: scroll;
+        gap: 50px;
+    }
+
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        position: relative;
+        top: 70px;
+    }
+
+    #dietitianMainBox{
+        width: 420px;
+        height: 950px;
+        left: 6px;
+    }
+
+    #aboutDietitian{
+        gap: 30px;
+    }
+
+    #morePricing{
+        position: relative;
+        left: 50px;
+    }
+
+    #msgBtn{
+        left: 90px;
+    } 
+    
+    #videoGallery div video {
+        width: 190px;
+        height: 200px;
+    }
+
+    #SlotAndTrainingMainBox{
+        width: 415px;
+        height: 2200px;
+        left: 5px;
+    }
+
+    #SlotBookingBox{
+        height: 48rem;
+    }
+
+    #aboutTimeZone{
+        width: 350px;
+    }
+
+    #ClanderAndTimmingsBox{
+        flex-direction: column;
+        width: 380px;
+    }
+
+    #calender{
+        width: 90%;
+    }
+
+    #timmingsTable{
+        width: 380px;
+        height: 300px;
+        right: 10px;
+        top: 20px;
+    }
+
+    #trainingBox{
+        height: 87rem;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0;
+    }
+
+    #stepsOfOnlineTraining li{
+        width: 400px
+    }
+
+    #stepsOfOnlineTraining li p{
+        width: 370px;
+        left: 40px;
+    }
+    #stepsOfOnlineTraining li h2{
+        width: 370px;
+    }
+
+    #reviewBox{
+        top: 100px;
+        left: 25px;
+        width: 22rem;
+    }
+
+    #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
+        width: 3rem;
+        height: 3rem;
+        right: 20px;
+        top: 60px;
+    }
+
+    #leftWhiteArrow,#rightWhiteArrow{
+       top: 8px;
+    }
+
+    #review{
+        width: 18rem;
+        line-height: 17px;
+    }
+
+    #BoxForwhiteRightArrow{
+        left: 335px;
+        top: -148px;
+    }
+
+    #nameOfReviewer{
+        bottom: 75px;
+    }
+
+    #fiveStarRating{
+        left: 145px;
+        bottom: 75px;
+    }
+
+    #reviewerImageBox{
+        width: 5rem;
+        height: 6rem;
+    }
+    
+    #reviewerImage{
+        left: 138px;
+        bottom: 75px;
+    }
+
+    #reverseQuoteIcon{
+        left: 290px;
+    }
+
+    #downloadAppSection{
+        height: 800px;
+        position: relative;
+        top: 150px;
+    }
+
+    #downloadAppSection h1{
+        top: 50px;
+        left: 40px;
+    }
+
+    #aboutApp{
+        top: 80px;
+        width: 23rem;
+        left: 40px;
+    }
+
+    #appLinkForDifferentOS{
+        top: 110px;
+        left: 10px;
+        width: 25rem;
+    }
+
+    #androidBox div, #iosBox div{
+        width: 100px;
+    }
+    #androidBox h2{
+        width: 125px;
+    }
+    #iosBox h2{
+       width: 120px;
+    }
+
+    #phoneImage{
+        width: 350px;
+        height: 380px;
+        top: 150px;
+        left: 40px;
+        bottom: 0px;
+    }
+
+    footer{
+        top: 150px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:376px) {
+    #heading{
+        width: 375px;
+    }
+
+    #navBar{    
+        justify-content:flex-start;
+        width: 374px;
+        height: auto;
+        left: 0px;
+        top: 60px;
+        padding: 0;
+        background-color: white;
+        overflow-y: scroll;
+        gap: 50px;
+    }
+
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        position: relative;
+        top: 70px;
+    }
+
+    #dietitianMainBox{
+        width: 374px;
+        height: 950px;
+        left: 6px;
+    }
+
+    #aboutDietitian{
+        gap: 30px;
+    }
+
+    #expertiseOfDietitian{
+        width: 13rem;
+    }
+
+    #morePricing{
+        position: relative;
+        left: 30px;
+    }
+
+    #msgBtn{
+        left: 60px;
+    } 
+    
+
+    #navOfVideos{
+        gap: 55px;
+    }
+
+
+    #videoGallery{
+        gap: 20px;
+    }
+
+    #videoGallery div video {
+        width: 360px;
+        height: 200px;
+    }
+
+    #SlotAndTrainingMainBox{
+        width: 374px;
+        height: 3000px;
+        left: 5px;
+        top: 580px;
+    }
+
+    #SlotBookingBox{
+        height: 48rem;
+    }
+
+    #aboutTimeZone{
+        width: 350px;
+    }
+
+    #ClanderAndTimmingsBox{
+        flex-direction: column;
+        width: 350px;
+    }
+
+    #calender{
+        width: 90%;
+    }
+    #calenderTable{
+        width: 350px;
+    }
+
+    #timmings{
+        width: 350px;
+    }
+    #timmingsTable{
+        width: 370px;
+        height: 300px;
+        right: 15px;
+        top: 20px;
+    }
+
+    #trainingBox{
+        height: 98rem;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0;
+    }
+
+    #stepsOfOnlineTraining li{
+        width: 370px
+    }
+
+    #stepsOfOnlineTraining li p{
+        width: 330px;
+        left: 40px;
+    }
+    #stepsOfOnlineTraining li h2{
+        width: 330px;
+    }
+
+    #testimonialsSection{
+        left: 6px;
+        top: 100px;
+    }
+
+    #reviewBox{
+        top: 100px;
+        left: 25px;
+        width: 20rem;
+    }
+
+    #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
+        width: 2rem;
+        height: 2rem;
+        right: 20px;
+        top: 60px;
+    }
+
+    #leftWhiteArrow,#rightWhiteArrow{
+       top: 4px;
+       width: 25px;
+       height: 25px;
+    }
+
+    #review{
+        bottom: 35px;
+        width: 14rem;
+        line-height: 15px;
+    }
+
+    #BoxForwhiteRightArrow{
+        left: 305px;
+        top: -135px;
+    }
+
+    #nameOfReviewer{
+        bottom: 60px;
+    }
+
+    #fiveStarRating{
+        left: 125px;
+        bottom: 60px;
+    }
+    
+    #reviewerImage{
+        left: 115px;
+        bottom: 60px;
+    }
+
+    #reverseQuoteIcon{
+        left: 250px;
+    }
+
+    #downloadAppSection h1{
+        width: 20rem;
+    }
+
+    #aboutApp{
+        top: 80px;
+        width: 20rem;
+        left: 35px;
+    }
+
+    #appLinkForDifferentOS{
+        top: 110px;
+        left: 10px;
+        width: 21rem;
+    }
+
+    #androidBox div, #iosBox div{
+        width: 90px;
+        left: 55px;
+    }
+    #androidBox h2{
+        width: 110px;
+        font-size: large;
+    }
+    #iosBox h2{
+       width: 100px;
+       font-size: large;
+    }
+
+    #phoneImage{
+        width: 300px;
+        height: 350px;
+        top: 150px;
+        left: 40px;
+        bottom: 0px;
+    }
+
+    footer{
+        top: 150px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:321px) {
+    #heading{
+        width: 318px;
+    }
+
+    #navBar{    
+        justify-content:flex-start;
+        width: 280px;
+        padding: 0;
+        background-color: white;
+        overflow-y: scroll;
+    }
+
+    #navBar::-webkit-scrollbar{
+        display: none;
+    }
+
+    #dietitianSlotBookingSection{
+        flex-direction: column;
+        position: relative;
+        top: 70px;
+    }
+
+    #dietitianMainBox{
+        width: 280px;
+        height: 950px;
+        left: 6px;
+    }
+
+    #aboutDietitian{
+        gap: 10px;
+    }
+
+    #expertiseOfDietitian{
+        width: 13rem;
+    }
+
+    #morePricing{
+        position: relative;
+        left: 10px;
+    }
+
+    #msgBtn{
+        left: 30px;
+    } 
+    
+
+    #navOfVideos{
+        gap: 55px;
+    }
+
+
+    #videoGallery{
+        gap: 20px;
+    }
+
+    #videoGallery div video {
+        width: 295px;
+        height: 200px;
+    }
+
+    #SlotAndTrainingMainBox{
+        width: 300px;
+        height: 3300px;
+        left: 5px;
+        top: 580px;
+    }
+
+    #SlotBookingBox{
+        height: 48rem;
+        width: 300px;
+    }
+
+    #aboutTimeZone{
+        width: 280px;
+    }
+
+    #aboutSessions{
+        width: 250px;
+    }
+
+    #ClanderAndTimmingsBox{
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #leftArrow{
+        left: 120px;
+    }
+    #rightArrow{
+        left: 120px;
+    }
+    #calender{
+        width: 90%;
+    }
+    #calenderTable{
+        width: 270px;
+    }
+
+    #timmings{
+        width: 300px;
+    }
+    #timmingsTable{
+        width: 280px;
+        height: 300px;
+        right: 10px;
+        top: 20px;
+    }
+
+    #trainingBox{
+        height: 118rem;
+        width: 300px;
+    }
+
+    #stepsOfOnlineTraining{
+        padding: 0;
+        width: 300px;
+    }
+
+    #stepsOfOnlineTraining li{
+        width: 300px
+    }
+
+    #stepsOfOnlineTraining li p{
+        width: 270px;
+        left: 40px;
+    }
+    #stepsOfOnlineTraining li h2{
+        width: 250px;
+    }
+
+    #testimonialsSection{
+        left: 2px;
+        top: 100px;
+    }
+
+    #reviewBox{
+        top: 100px;
+        left: 20px;
+        width: 17rem;
+    }
+
+    #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
+        width: 1rem;
+        height: 1rem;
+        right: 10px;
+        top: 80px;
+    }
+
+    #leftWhiteArrow,#rightWhiteArrow{
+       top: 0px;
+       width: 10px;
+       height: 10px;
+    }
+
+    #review{
+        bottom: 30px;
+        width: 12rem;
+        line-height: 15px;
+    }
+
+    #BoxForwhiteRightArrow{
+        left: 265px;
+        top: -130px;
+    }
+
+    #nameOfReviewer{
+        bottom: 40px;
+    }
+
+    #fiveStarRating{
+        left: 105px;
+        bottom: 40px;
+    }
+    
+    #reviewerImage{
+        left: 98px;
+        bottom: 40px;
+    }
+
+    #reverseQuoteIcon{
+        left: 210px;
+        top: -190px;
+    }
+
+    #downloadAppSection h1{
+        width: 16rem;
+        left: 25px;
+    }
+
+    #aboutApp{
+        top: 80px;
+        width: 15rem;
+        left: 25px;
+    }
+
+    #appLinkForDifferentOS{
+        top: 110px;
+        left: 5px;
+        width: 18rem;
+    }
+
+    #androidBox div, #iosBox div{
+        width: 70px;
+        left: 55px;
+        font-size: x-small;
+    }
+    #androidBox h2{
+        width: 90px;
+        font-size: small;
+    }
+    #iosBox h2{
+       width: 80px;
+       font-size: medium;
+    }
+
+    #phoneImage{
+        width: 250px;
+        height: 320px;
+        top: 150px;
+        left: 20px;
+        bottom: 0px;
+    }
+
+    footer{
+        top: 150px;
+    }
+}
