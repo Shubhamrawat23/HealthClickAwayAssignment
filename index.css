@@ -379,7 +379,7 @@ ul li:hover{
 
 #testimonialsSection{
     width: 99vw;
-    height: 100vh;
+    height: 35rem;
     background-color: rgb(233, 233, 233);
     position: relative;
     top: 150px;
@@ -575,6 +575,9 @@ footer{
 
 
 @media only screen and (max-width:426px) {
+    main{
+        height: 300rem;
+    }
     #heading{
         width: 425px;
         flex-direction: column;
@@ -626,7 +629,7 @@ footer{
     #msgBtn{
         left: 90px;
     } 
-    
+
     #videoGallery div video {
         width: 190px;
         height: 200px;
@@ -663,11 +666,12 @@ footer{
     }
 
     #trainingBox{
-        height: 87rem;
+        height: 88rem;
     }
 
     #stepsOfOnlineTraining{
         padding: 0;
+        height: 68rem;
     }
 
     #stepsOfOnlineTraining li{
@@ -682,6 +686,9 @@ footer{
         width: 370px;
     }
 
+    #testimonialsSection{
+        top: 150px;
+    }
     #reviewBox{
         top: 100px;
         left: 25px;
@@ -774,7 +781,7 @@ footer{
     }
 
     footer{
-        top: 150px;
+        top: 5px;
     }
 }
 
@@ -784,6 +791,9 @@ footer{
 
 
 @media only screen and (max-width:376px) {
+    main{
+        height: 344rem;
+    }
     #heading{
         width: 375px;
     }
@@ -797,7 +807,7 @@ footer{
         padding: 0;
         background-color: white;
         overflow-y: scroll;
-        gap: 50px;
+        gap: 10px;
     }
 
     #navBar::-webkit-scrollbar{
@@ -808,6 +818,7 @@ footer{
         flex-direction: column;
         position: relative;
         top: 70px;
+        width: 330px;
     }
 
     #dietitianMainBox{
@@ -844,12 +855,12 @@ footer{
     }
 
     #videoGallery div video {
-        width: 360px;
+        width: 320px;
         height: 200px;
     }
 
     #SlotAndTrainingMainBox{
-        width: 374px;
+        width: 320px;
         height: 3000px;
         left: 5px;
         top: 580px;
@@ -860,33 +871,40 @@ footer{
     }
 
     #aboutTimeZone{
-        width: 350px;
+        width: 300px;
+    }
+
+    #aboutSessions{
+        width: 290px;
     }
 
     #ClanderAndTimmingsBox{
         flex-direction: column;
-        width: 350px;
+        width: 300px;
+    }
+    #leftArrow,#rightArrow{
+        left: 150px;
     }
 
     #calender{
-        width: 90%;
+        width: 80%;
     }
     #calenderTable{
-        width: 350px;
+        width: 290px;
     }
 
     #timmings{
-        width: 350px;
+        width: 300px;
     }
     #timmingsTable{
-        width: 370px;
+        width: 300px;
         height: 300px;
         right: 15px;
         top: 20px;
     }
 
     #trainingBox{
-        height: 98rem;
+        height: 110rem;
     }
 
     #stepsOfOnlineTraining{
@@ -894,33 +912,40 @@ footer{
     }
 
     #stepsOfOnlineTraining li{
-        width: 370px
+        width: 300px
     }
 
     #stepsOfOnlineTraining li p{
-        width: 330px;
+        width: 280px;
         left: 40px;
     }
     #stepsOfOnlineTraining li h2{
-        width: 330px;
+        width: 280px;
     }
 
     #testimonialsSection{
-        left: 6px;
-        top: 100px;
+        left: 2px;
+        top: 230px;
+        width: 330px;
     }
 
     #reviewBox{
         top: 100px;
         left: 25px;
-        width: 20rem;
+        width: 18rem;
+    }
+
+    #quoteIcon{
+        width: 40px;
+        height: 40px;
+        left: 5px;
     }
 
     #BoxForwhiteLeftArrow,#BoxForwhiteRightArrow{
         width: 2rem;
         height: 2rem;
-        right: 20px;
-        top: 60px;
+        right: 15px;
+        top: 80px;
     }
 
     #leftWhiteArrow,#rightWhiteArrow{
@@ -931,12 +956,12 @@ footer{
 
     #review{
         bottom: 35px;
-        width: 14rem;
+        width: 13rem;
         line-height: 15px;
     }
 
     #BoxForwhiteRightArrow{
-        left: 305px;
+        left: 265px;
         top: -135px;
     }
 
@@ -955,48 +980,55 @@ footer{
     }
 
     #reverseQuoteIcon{
-        left: 250px;
+        left: 240px;
+        width: 40px;
+        height: 40px;
     }
 
+    #downloadAppSection{
+        height: 50rem;
+        width: 330px;
+        top: 200px;
+    }
     #downloadAppSection h1{
         width: 20rem;
     }
 
     #aboutApp{
         top: 80px;
-        width: 20rem;
+        width: 17rem;
         left: 35px;
     }
 
     #appLinkForDifferentOS{
         top: 110px;
         left: 10px;
-        width: 21rem;
+        width: 19rem;
     }
 
     #androidBox div, #iosBox div{
-        width: 90px;
+        width: 80px;
         left: 55px;
     }
     #androidBox h2{
-        width: 110px;
-        font-size: large;
+        width: 80px;
+        font-size: medium;
     }
     #iosBox h2{
        width: 100px;
-       font-size: large;
+       font-size: medium;
     }
 
     #phoneImage{
-        width: 300px;
-        height: 350px;
+        width: 280px;
+        height: 300px;
         top: 150px;
-        left: 40px;
+        left: 10px;
         bottom: 0px;
     }
 
     footer{
-        top: 150px;
+        top: 10px;
     }
 }
 
